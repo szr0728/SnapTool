@@ -1,0 +1,19 @@
+# 构建产物
+bin/
+obj/
+nf/bin/
+nf/obj/
+nf/out/
+dist/
+
+# VS / Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userprefs
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store

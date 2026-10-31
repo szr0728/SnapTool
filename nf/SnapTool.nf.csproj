@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    .NET Framework 4.8 目标：exe 直接调用系统内置的 4.8 运行时，
+    不打包任何运行时/中间层，产物约 60KB（net8 版是 210KB）。
+    Windows 10 1903+ 与 Windows 11 均自带 4.8，无需额外安装。
+    源码与上一级目录共用，不要在这里放 .cs 文件。
+  -->
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>SnapTool</AssemblyName>
+    <RootNamespace>SnapTool</RootNamespace>
+    <ApplicationIcon>../app.ico</ApplicationIcon>
+    <ApplicationManifest>../app.manifest</ApplicationManifest>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <!--
+      版本号只在这个文件里改；程序运行时从程序集元数据读出来显示在托盘菜单顶部。
+      改功能就加一位：修 bug 加第三位，加功能加第二位。
+      测试阶段带 -beta 后缀，菜单/提示里会自动标注「测试版」；
+      定稿时改成不带后缀的数字（如 1.1.0），就是一个正式版。
+    -->
+    <Version>1.1.0-beta</Version>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <Company>SnapTool</Company>
+    <Product>SnapTool 截图工具</Product>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>MSB3277</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../*.cs" />
+  </ItemGroup>
+
+</Project>
