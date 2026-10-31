@@ -1,5 +1,7 @@
 # SnapTool —— 截图工具（类微信截图）
 
+[**下载最新测试版 v1.1.0-beta**](https://github.com/szr0728/SnapTool/releases/latest) —— `SnapTool.exe`，59.5 KB 单文件，双击即用，无需安装任何运行时。
+
 Windows 截图工具，全局热键 **Alt+A**，常驻托盘，**单文件 59KB**，不依赖 Python、不打包 Qt、也不用装 .NET 8。
 C# / WinForms + GDI+ 实现，运行时用 Windows 自带的 .NET Framework 4.8（Win10 1903+ / Win11 均内置）。
 
