@@ -22,13 +22,12 @@
     <DebugSymbols>false</DebugSymbols>
     <!--
       版本号只在这个文件里改；程序运行时从程序集元数据读出来显示在托盘菜单顶部。
-      改功能就加一位：修 bug 加第三位，加功能加第二位。
-      测试阶段带 -beta 后缀，菜单/提示里会自动标注「测试版」；
-      定稿时改成不带后缀的数字（如 1.1.0），就是一个正式版。
+      测试阶段一律 0.x（如 0.1.0-beta）；用户明确说发布正式版时才跳 1.0.0，
+      并且去掉 -beta 后缀。加功能加第二位，修 bug 加第三位。
     -->
-    <Version>1.1.0-beta</Version>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <FileVersion>1.1.0.0</FileVersion>
+    <Version>0.1.0-beta</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
     <Company>SnapTool</Company>
     <Product>SnapTool 截图工具</Product>
     <Prefer32Bit>false</Prefer32Bit>
